@@ -1,0 +1,72 @@
+[data-theme="fallout"] {
+  --color-base-100: oklch(8% 0.02 140);
+  --color-base-200: oklch(12% 0.03 140);
+  --color-base-300: oklch(18% 0.04 140);
+  --color-base-content: oklch(85% 0.12 140);
+
+  --color-primary: oklch(70% 0.18 140);
+  --color-primary-content: oklch(10% 0.02 140);
+
+  --color-secondary: oklch(55% 0.14 250);
+  --color-secondary-content: oklch(95% 0.02 250);
+
+  --color-accent: oklch(80% 0.18 95);
+  --color-accent-content: oklch(15% 0.03 95);
+
+  --color-neutral: oklch(45% 0.02 240);
+  --color-neutral-content: oklch(90% 0.01 240);
+
+  --color-info: oklch(65% 0.10 200);
+  --color-info-content: oklch(12% 0.02 200);
+
+  --color-success: oklch(68% 0.16 135);
+  --color-success-content: oklch(10% 0.02 135);
+
+  --color-warning: oklch(75% 0.20 80);
+  --color-warning-content: oklch(15% 0.03 80);
+
+  --color-error: oklch(45% 0.22 25);
+  --color-error-content: oklch(95% 0.02 25);
+
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0.15;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.blur-xs {
+  filter: blur(5px);
+}
+
+.blur-sm {
+  filter: blur(15px);
+}
+
+.vignette-vertical {
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    oklch(8% 0.02 140 / 0.4),
+    oklch(12% 0.03 140 / 0.6),
+    oklch(18% 0.04 140 / 0.9)
+  );
+}
+
+.vignette-horizontal-yellow {
+  pointer-events: none;
+  background: linear-gradient(
+    to left,
+    oklch(80% 0.18 95 / 0.4),
+    oklch(12% 0.03 140 / 0.6),
+    oklch(80% 0.18 95 / 0.4)
+  );
+}
+
